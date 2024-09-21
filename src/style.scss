@@ -1,1 +1,25 @@
 // style.scss
+
+article p:first-of-type {
+  color: red;
+  font-size: 1.5em;
+}
+
+p {
+  color: hotpink;
+}
+
+* {
+  color: black;
+}
+
+section {
+  padding: 2rem;
+}
+
+p[special="true"] {
+  color: black;
+  padding: 2rem;
+  padding-left: 0.5rem;
+  background-color: rgba(190, 190, 190, 1);
+}
