@@ -1,1 +1,53 @@
 // style.scss
+
+/* The button will inherit this style */
+article a {
+  color: #7c3626;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background: pink;
+  font: inherit;
+  text-align: center;
+}
+
+.my-button:hover {
+  background: #e2a294;
+}
+
+html {
+  color: lightslategray;
+}
+
+body {
+  font-size: 1.2em;
+}
+
+p {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 900;
+  color: black;
+}
+
+.my-component {
+  font-weight: 500;
+}
+
+.my-component strong {
+  font-weight: inherit;
+}
+
+aside strong {
+  font-weight: initial;
+}
+
+#unset p {
+  font-style: unset;
+  color: unset;
+}
