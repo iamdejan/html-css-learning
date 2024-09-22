@@ -11,14 +11,30 @@
   </head>
   <body>
     <div>
-      <input id="flexbox-toggle" type="checkbox" />
-      <span>Toggle <code>flex</code></span>
+      <div>
+        <input id="flexbox-toggle" type="checkbox" />
+        <span>Toggle <code>flex</code></span>
+      </div>
+      <div class="root" display="block">
+        <div class="element">Hello</div>
+        <div class="element">to</div>
+        <div class="element">the</div>
+        <div class="element">world</div>
+      </div>
     </div>
-    <div class="root" display="block">
-      <div class="element">Hello</div>
-      <div class="element">to</div>
-      <div class="element">the</div>
-      <div class="element">world</div>
+
+    <hr />
+    <div>
+      <div>
+        <input id="flex-direction-toggle" type="checkbox" />
+        <span>Change direction to "column"</span>
+      </div>
+      <div class="flex-direction-demo-root">
+        <div class="flex-direction-demo-element">Hello</div>
+        <div class="flex-direction-demo-element">to</div>
+        <div class="flex-direction-demo-element">the</div>
+        <div class="flex-direction-demo-element">world</div>
+      </div>
     </div>
   </body>
 </html>
