@@ -3,3 +3,22 @@
 body {
   font-family: "Hind", Arial, Helvetica, sans-serif;
 }
+
+.root {
+  min-height: 20rem;
+}
+
+.root[display=block] {
+  display: block;
+}
+
+.root[display=flex] {
+  display: flex;
+}
+
+.element {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
