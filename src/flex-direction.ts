@@ -1,7 +1,6 @@
-const toggle = document.querySelector("#flex-direction-toggle") as HTMLInputElement|null;
-
-toggle?.addEventListener("change", () => {
-  const direction = toggle.checked? "column": "row";
+const flexDirectionToggle = document.querySelector("#flex-direction-toggle") as HTMLInputElement|null;
+flexDirectionToggle?.addEventListener("change", () => {
+  const direction = flexDirectionToggle.checked? "column": "row";
   const root = document.querySelector("div.flex-direction-demo-root") as HTMLDivElement|null;
   root?.style.setProperty("flex-direction", direction);
 

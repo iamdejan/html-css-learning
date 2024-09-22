@@ -1,7 +1,7 @@
-const toggle = document.querySelector("#flexbox-toggle") as HTMLInputElement|null;
+const flexboxToggle = document.querySelector("#flexbox-toggle") as HTMLInputElement|null;
 
-toggle?.addEventListener("change", () => {
-  const display = toggle.checked? "flex": "block";
+flexboxToggle?.addEventListener("change", () => {
+  const display = flexboxToggle.checked? "flex": "block";
   const root = document.querySelector("div.root") as HTMLDivElement|null;
   root?.style.setProperty("display", display);
 

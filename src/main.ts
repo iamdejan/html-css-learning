@@ -3,3 +3,4 @@ import "./flexbox-toggle";
 import "./flex-direction";
 import "./flex-alignment";
 import "./flex-basis";
+import "./flex-gap";

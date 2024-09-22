@@ -1,6 +1,4 @@
 const flexBasisDirectionSelect = document.querySelector("select#flex-basis-direction-select") as HTMLInputElement|null;
-const firstElementSizeInput = document.querySelector("input#flex-basis-first-property-size") as HTMLInputElement|null;
-
 flexBasisDirectionSelect?.addEventListener("change", (event) => {
   const direction = (event.target as HTMLInputElement)?.value as string|null;
   const root = document.querySelector("div.flex-basis-demo-root") as HTMLDivElement|null;
@@ -12,6 +10,7 @@ flexBasisDirectionSelect?.addEventListener("change", (event) => {
   });
 });
 
+const firstElementSizeInput = document.querySelector("input#flex-basis-first-property-size") as HTMLInputElement|null;
 firstElementSizeInput?.addEventListener("change", (event) => {
   const value = (event.target as HTMLInputElement)?.value as string|null;
 

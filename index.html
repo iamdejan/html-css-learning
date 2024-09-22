@@ -90,5 +90,21 @@
       </div>
       First element size: <input id="flex-basis-first-property-size" type="number" min="50" max="350" value="50" />
     </div>
+    <hr />
+    <div>
+      <span>Select your <code>flex-direction</code>: </span>
+      <select id="flex-gap-direction-select">
+        <option value="row">row</option>
+        <option value="column">column</option>
+      </select>
+      <br />
+      <div class="flex-gap-demo-root">
+        <div class="flex-gap-demo-element" direction="row"></div>
+        <div class="flex-gap-demo-element" direction="row"></div>
+        <div class="flex-gap-demo-element" direction="row"></div>
+        <div class="flex-gap-demo-element" direction="row"></div>
+      </div>
+      Gap: <input id="flex-gap-value" type="number" min="0" max="50" value="0" />
+    </div>
   </body>
 </html>
