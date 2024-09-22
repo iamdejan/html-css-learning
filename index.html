@@ -49,7 +49,7 @@
         </select>
         <br />
         <span>Select your alignment on the primary axis by using <code>justify-content</code>: </span>
-        <select id="alignment-select">
+        <select id="primary-axis-alignment-select">
           <option value="flex-start">flex-start</option>
           <option value="center">center</option>
           <option value="flex-end">flex-end</option>
@@ -57,12 +57,21 @@
           <option value="space-around">space-around</option>
           <option value="space-evenly">space-evenly</option>
         </select>
+        <br />
+        <span>Select your alignment on the cross axis by using <code>align-items</code>: </span>
+        <select id="cross-axis-alignment-select">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="center">center</option>
+          <option value="flex-end">flex-end</option>
+          <option value="baseline">baseline</option>
+        </select>
       </div>
       <div class="flex-alignment-demo-root">
-        <div class="flex-alignment-demo-element">Hello</div>
+        <div class="flex-alignment-demo-element"><h2>Hello</h2></div>
         <div class="flex-alignment-demo-element">to</div>
         <div class="flex-alignment-demo-element">the</div>
-        <div class="flex-alignment-demo-element">world</div>
+        <div class="flex-alignment-demo-element"><h2>world</h2></div>
       </div>
     </div>
     <hr />
