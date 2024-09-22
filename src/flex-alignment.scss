@@ -1,0 +1,17 @@
+$flex-direction: row;
+$flex-alignment: flex-start;
+
+.flex-alignment-demo-root {
+  display: flex;
+  min-width: 100vw;
+  min-height: 20rem;
+  flex-direction: var(--flex-direction, $flex-direction);
+  justify-content: var(--flex-alignment, $flex-alignment);
+}
+
+.flex-alignment-demo-element {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
