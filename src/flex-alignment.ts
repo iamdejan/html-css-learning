@@ -1,4 +1,4 @@
-const flexDirectionSelect = document.querySelector("#flex-direction-select") as HTMLInputElement|null;
+const flexDirectionSelect = document.querySelector("select#flex-direction-select") as HTMLSelectElement|null;
 const primaryAxisAlignmentSelect = document.querySelector("select#primary-axis-alignment-select") as HTMLSelectElement|null;
 const crossAxisAlignmentSelect = document.querySelector("select#cross-axis-alignment-select") as HTMLSelectElement|null;
 

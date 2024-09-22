@@ -1,0 +1,21 @@
+const flexBasisDirectionSelect = document.querySelector("select#flex-basis-direction-select") as HTMLInputElement|null;
+const firstElementSizeInput = document.querySelector("input#flex-basis-first-property-size") as HTMLInputElement|null;
+
+flexBasisDirectionSelect?.addEventListener("change", (event) => {
+  const direction = (event.target as HTMLInputElement)?.value as string|null;
+  const root = document.querySelector("div.flex-basis-demo-root") as HTMLDivElement|null;
+  root?.style.setProperty("flex-direction", direction);
+
+  const elements = document.querySelectorAll("div.flex-basis-demo-element") as NodeListOf<HTMLDivElement>|null;
+  elements?.forEach((element) => {
+    element?.setAttribute("direction", direction!);
+  });
+});
+
+firstElementSizeInput?.addEventListener("change", (event) => {
+  const value = (event.target as HTMLInputElement)?.value as string|null;
+
+  const elements = document.querySelectorAll("div.flex-basis-demo-element") as NodeListOf<HTMLDivElement>|null;
+  const firstElement = elements?.item(0);
+  firstElement?.style.setProperty("flex-basis", `${value}px`);
+});
