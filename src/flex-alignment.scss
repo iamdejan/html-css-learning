@@ -1,12 +1,7 @@
-$flex-direction: row;
-$flex-alignment: flex-start;
-
 .flex-alignment-demo-root {
   display: flex;
   min-width: 100vw;
   min-height: 20rem;
-  flex-direction: var(--flex-direction, $flex-direction);
-  justify-content: var(--flex-alignment, $flex-alignment);
 }
 
 .flex-alignment-demo-element {

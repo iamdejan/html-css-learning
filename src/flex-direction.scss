@@ -4,14 +4,6 @@
   min-height: 20rem;
 }
 
-.flex-direction-demo-root[flex-direction=row] {
-  flex-direction: row;
-}
-
-.flex-direction-demo-root[flex-direction=column] {
-  flex-direction: column;
-}
-
 .flex-direction-demo-element {
   border: 1px solid;
   border-radius: 0.5rem;

@@ -1,13 +1,6 @@
 .root {
   min-height: 20rem;
-}
-
-.root[display=block] {
   display: block;
-}
-
-.root[display=flex] {
-  display: flex;
 }
 
 .element {

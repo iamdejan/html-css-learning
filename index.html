@@ -13,7 +13,7 @@
     <div>
       <div>
         <input id="flexbox-toggle" type="checkbox" />
-        <span>Toggle <code>flex</code></span>
+        <span id="display">block</span>
       </div>
       <div class="root" display="block">
         <div class="element">Hello</div>
@@ -27,7 +27,7 @@
     <div>
       <div>
         <input id="flex-direction-toggle" type="checkbox" />
-        <span>Change direction to "column"</span>
+        <span id="direction">row</span>
       </div>
       <div class="flex-direction-demo-root">
         <div class="flex-direction-demo-element">Hello</div>
@@ -48,7 +48,7 @@
           <option value="column-reverse">column-reverse</option>
         </select>
         <br />
-        <span>Select your alignment: </span>
+        <span>Select your alignment on the primary axis by using <code>justify-content</code>: </span>
         <select id="alignment-select">
           <option value="flex-start">flex-start</option>
           <option value="center">center</option>
@@ -65,5 +65,6 @@
         <div class="flex-alignment-demo-element">world</div>
       </div>
     </div>
+    <hr />
   </body>
 </html>
