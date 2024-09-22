@@ -13,8 +13,6 @@ flexBasisDirectionSelect?.addEventListener("change", (event) => {
 const firstElementSizeInput = document.querySelector("input#flex-basis-first-property-size") as HTMLInputElement|null;
 firstElementSizeInput?.addEventListener("change", (event) => {
   const value = (event.target as HTMLInputElement)?.value as string|null;
-
-  const elements = document.querySelectorAll("div.flex-basis-demo-element") as NodeListOf<HTMLDivElement>|null;
-  const firstElement = elements?.item(0);
+  const firstElement = document.querySelector("div.flex-basis-demo-element:first-child") as HTMLDivElement;
   firstElement?.style.setProperty("flex-basis", `${value}px`);
 });

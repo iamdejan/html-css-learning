@@ -1,0 +1,26 @@
+.flex-margin-demo-root {
+  width: 350px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  display: flex;
+}
+
+.flex-margin-demo-element {
+  border: 1px solid;
+  border-radius: 0.25rem;
+}
+
+.flex-margin-demo-element[direction=row] {
+  width: 50px;
+  min-height: 100%;
+}
+
+.flex-margin-demo-element[direction=column] {
+  min-width: 100%;
+  height: 50px;
+}
+
+.flex-margin-demo-element:first-child {
+  background-color: yellow;
+}
