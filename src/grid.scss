@@ -1,11 +1,11 @@
-.grid-basic-demo-parent {
+#grid-basic-demo div.parent {
   display: grid;
   height: 300px;
   border: 2px solid;
   border-radius: 0.5rem;
 }
 
-.grid-basic-demo-children {
+#grid-basic-demo div.children {
   display: flex;
   border: 1px solid;
   border-radius: 0.5rem;

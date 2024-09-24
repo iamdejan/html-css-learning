@@ -3,12 +3,12 @@ childrenNumberInput?.addEventListener("change", (event) => {
   const target = event.target as HTMLInputElement;
   const value = Number.parseInt(target.value);
 
-  const parent = document.querySelector("div.grid-basic-demo-parent") as HTMLDivElement|null;
+  const parent = document.querySelector("#grid-basic-demo div.parent") as HTMLDivElement|null;
   if(parent) {
     parent.innerHTML = "";
     
     for (let i = 1; i <= value; i++) {
-      const child = `<div class="grid-basic-demo-children"></div>`;
+      const child = `<div class="children"></div>`;
       parent.innerHTML += child;
     }
   }

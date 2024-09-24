@@ -1,0 +1,21 @@
+#grid-column-demo div.parent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 0.5rem;
+}
+
+#grid-column-demo div.children {
+  display: flex;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+
+#grid-column-demo div.children:first-of-type {
+  background-color: yellow;
+}
+
+#grid-column-demo div.children:last-of-type {
+  background-color: grey;
+}
