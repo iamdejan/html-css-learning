@@ -1,0 +1,21 @@
+#grid-calendar-demo div.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 300px;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid;
+  border-radius: 0.5rem;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+#grid-calendar-demo div.children {
+  display: flex;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  background-color: pink;
+}
